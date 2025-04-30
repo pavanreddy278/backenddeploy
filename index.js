@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
 app.get('/twitter',(req,res)=>{
     res.send('<h3>Welcome to Twitter!</h3>')
 })
+
+app.get('/data',(req,res)=>{
+    res.json({ user: 'tobi' })
+})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
